@@ -913,9 +913,13 @@ output$sc1c2oup.png <- downloadHandler(
                         input$sc1d1cols, input$sc1d1fsz, save = TRUE) ) 
   }) 
    
-  output$sc1a3oup1 <- renderPlot({ 
-    plot_vish_image(input$vish,input$thres) 
-  })    
+  output$sc1a4oup1 <- renderPlot({ 
+    plot_vish_image("Sox9", 0.6) 
+  })
+  output$sc1a4oup1.ui <- renderUI({ 
+    plotOutput("sc1a4oup1") 
+  }) 
+
    
 }) 
  
