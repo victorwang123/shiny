@@ -283,8 +283,9 @@ navbarPage(
        12, selectInput(inputId="vish", "Gene name:", choices=NULL),
      ),
      column(12,
-            textInput(inputId="thres", label="Thres", value = 0.75),),
+           textInput(inputId="thres", label="Thres", value = 0.75),),
      ),
+     div(inputId="sc1a4oup1" ),
    br(),br(), 
  ),     # End of tab (2 space) 
  
